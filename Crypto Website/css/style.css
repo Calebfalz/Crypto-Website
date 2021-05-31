@@ -1,7 +1,9 @@
 :root {
   --primary-color: #27AE61;
   --secondary-color: #FFFFFF;
-  --dark-color: #39405A;
+  --dark-color: #272D43;
+  --lightgrey: #777777;
+  --margin-bottom: 10rem;
 }
 
 * {
@@ -38,7 +40,7 @@ li {
 .top-nav-container {
   background-color: var(--dark-color);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   margin-bottom: 1rem;
   position: sticky;
 
@@ -127,12 +129,25 @@ li {
 }
 
 .nav-logo {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
-.nav-logo img {
-  width: 100%;
+
+.nav-logo-icon {
+  font-size: 1.5rem;
+  margin-right: .6rem;
+  background-color: var(--primary-color);
+  padding: .3rem .9rem;
+  border-radius: 3px;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
+
+.nav-logo-text p {
+  font-size: .7rem;
+}
+
 
 .nav-links ul {
   display: flex;
@@ -171,7 +186,7 @@ li {
   font-family: 'Nunito';
   font-size: 1.1rem;
   color: var(--secondary-color);
-  width: 59%;
+  width: 69%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 3.5rem;
@@ -179,14 +194,16 @@ li {
   letter-spacing: 1.15px;
 }
 
+
 .header-body-button {
   font-size: 1.1rem;
   font-family: "Nunito";
   background-color: var(--primary-color);
   padding: 1rem 2.3rem;
   border-radius: 3px;
-
 }
+
+
 
 .header-body-button:hover {
   background-color: var(--secondary-color);
@@ -252,25 +269,49 @@ li {
   padding: .5rem .7rem;
 }
 
-.select {
+.select-coin {
   background-color: var(--secondary-color);
   position: absolute;
-  bottom: -90px;
-  width: 120px;
+  bottom: -178px;
+  width: 130px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  overflow-y: scroll;
   display: none;
-
 }
 
-.select li {
+
+
+.select1 {
+  display: block;
+}
+
+.select2 {
+  display: block;
+}
+
+.select-coin li {
   margin-top: .6rem;
-  padding-left: 1rem;
+  padding: .5rem 0 .3rem 1rem;
+  color: white;
 }
 
-.select li a {
+.select-coin li:hover {
+  background-color: var(--dark-color);
+
+}
+
+.opco p {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.select-coin li a {
   color: black;
   font-family: 'Nunito';
+}
 
-
+.select-coin li a:hover {
+  color: var(--secondary-color);
 }
 
 
@@ -333,7 +374,7 @@ li {
   grid-template-columns: repeat(2, 1fr);
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: var(--margin-bottom);
 }
 
 .section1 h2 {
@@ -406,4 +447,642 @@ li {
 .avatar .h2 {
   color: var(--secondary-color);
   z-index: 2;
+}
+
+/* ====================== SECTION 2 ======================= */
+
+/* section 2 */
+.section2 {
+  background-color: #F8F8F8;
+  padding: 6rem 0;
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+}
+
+/* section2 container */
+.section2-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+/* section 2 container right */
+.section2-container-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2-container-right h2 {
+  margin-bottom: 2rem;
+}
+
+.container-right-p {
+  color: var(--dark-color);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+/* about container */
+.about-container{
+  display: flex;
+
+
+}
+
+.icons {
+  margin-right: 1.3rem;
+}
+
+.icons-desc{
+  flex: 2
+}
+
+
+/* icons */
+.icons {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35rem;
+  text-align: center;
+  color: white;
+}
+
+/* =================== SECTION 3 ===================== */
+.section3 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+}
+
+.section3-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* section 3 container up */
+.section3-container-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section3-container-up h1 {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+
+.span-div {
+  margin-bottom: 2.5rem;
+  margin-top: .6rem;
+}
+
+.section3-container-up p {
+  width: 70%;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--lightgrey);
+  font-family: "Josefin Sans";
+  word-spacing: 1.8px;
+}
+
+
+.section3-container-down {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: .7rem 1rem;
+  font-size: 1.15rem;
+  color: var(--secondary-color);
+}
+
+.accordion::after {
+  content: "-";
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.section3-content {
+  position: relative;
+  line-height: 1.8;
+  color: var(--lightgrey);
+  font-family: "Josefin Sans";
+  margin-top: 1rem;
+  /* height: 0;
+  overflow: hidden; */
+  transition: 0.5s;
+}
+
+/* =================== SECTION 4 ========================= */
+.section4 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+  background-color: var(--dark-color);
+  padding: 5rem 0;
+}
+
+.section4-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.section4-container-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4-container-body h2 {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  width: 57%;
+  display: flex;
+  }
+
+.form input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid white;
+  color: var(--lightgrey);
+  font-family: "Josefin Sans";
+  font-size: 1.08rem;
+  padding-left: 1rem;
+}
+
+.form i {
+  background-color: var(--primary-color);
+  align-self: center;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  padding: .5rem 1.5rem;
+  border-top-right-radius: 3.5px;
+  border-bottom-right-radius: 3.5px;
+}
+
+
+/* ================ SECTION 5 ====================== */
+.section5 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+}
+
+/* section5 Container */
+
+.section5-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* section5 Container top */
+
+.section5-container-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.section5-container-top h2 {
+  font-size: 1.8rem;
+  font-family: "Josefin Sans";
+  color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+.section5-container-top p {
+  color: var(--lightgrey);
+  letter-spacing: 1.2px;
+  font-size: .9rem;
+  font-weight: bold;
+}
+/* .section5-container middlw */
+.section5-container-middle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  font-family: 'Nunito';
+  margin-bottom: 3rem;
+}
+
+.section5-container-down{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+
+.table {
+  border: 1px solid #E5E5E5;
+  width: 100%;
+  border-collapse: collapse;
+  height: 450px;
+  font-weight: bold;
+}
+
+thead {
+  height: 1rem;
+}
+
+.section5-container-down-table-row {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.table-details-container {
+  display: flex;
+  align-items: center;
+}
+
+.table-details-container div {
+  background-color: var(--dark-color);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+table tbody {
+  height: 5rem;
+}
+
+tbody tr {
+  padding: 2rem 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+/* ================= SECTION 6 ========================== */
+.section6 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+}
+
+.section6-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* .section6-container-top */
+.section6-container-top p {
+  letter-spacing: normal;
+  word-spacing: 1.6px;
+}
+
+.section6-container-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+  font-family: "Nunito";
+  align-items: center;
+}
+
+.bottom i {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.bottom h2 {
+  margin-bottom: .5rem;
+}
+
+.bottom p {
+  color: var(--lightgrey);
+  line-height: 1.85;
+}
+
+/* ==================== SECTION 7 ========================== */
+.section7 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+}
+
+.section7-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* =========== Tabs ========== */
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.tab-item {
+  border: 1px solid #E5E5E5;
+  padding: .6rem .8rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out;
+}
+
+.tab-border {
+  padding: .6rem .8rem;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+
+
+}
+
+.tab-border p {
+  color: var(--secondary-color) !important;
+}
+
+.tab-item p {
+  color: var(--lightgrey);
+}
+
+/* ================ Tab Content ================= */
+.tab-content-item {
+  display: none;
+  opacity: .6;
+  transition: 2s;
+
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: 2s;
+}
+.tab-content-item-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+
+}
+
+
+.tab-content-details {
+  background-color: var(--dark-color);
+
+  height: 570px;
+  padding: 2rem 1.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tab-content-icon {
+  font-size: 7rem;
+  color: var(--secondary-color);
+  margin: -65px 0px 30px 0px;
+  text-align: center;
+  padding: 0;
+
+}
+
+.tab-content-icon i {
+  border: 6px solid var(--dark-color);
+  border-radius: 50%;
+  margin-top: -10px;
+
+}
+
+/* tab-content-dividers */
+.tab-content-details-divider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 8rem;
+
+}
+
+.line {
+  display: flex;
+  outline: 1px solid var(--secondary-color);
+  border-radius: 2px;
+  width: 3.3rem;
+  height: 1px;
+}
+
+.circle {
+  border: 1px solid white;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  width: .7rem;
+  height: .7rem;
+}
+
+/* tab content button */
+.tab-content-details-button {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: .6rem .9rem;
+  border-radius: 1.8px;
+}
+
+.tab-content-details-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color .5s ease-in-out;
+}
+
+/* ================ AECTION 8 ===================== */
+.section8 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+  background-color: var(--dark-color);
+  padding: 4rem 0;
+}
+
+.section8-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section8-container-left h2 {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.section8-container-left p {
+  color: var(--secondary-color);
+  font-family: "Josefin Sans";
+}
+
+.section8-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: .5rem 1.5rem;
+  border-radius: 2px;
+}
+
+.section8-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* ======================= SECTION 9 ================= */
+.section9 {
+  font-family: 'Nunito';
+  margin-bottom:  var(--margin-bottom);
+  background-color: var(--dark-color);
+  padding: 8rem 0;
+  position: relative;
+}
+
+.section9-container {
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+.section9-container-top h2 {
+  color: var(--secondary-color)
+}
+
+.section9-container-top p {
+  color: var(--secondary-color);
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  line-height: 1.5;
+}
+
+/* section9-container-bottom */
+
+.section9-container-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px 400px;
+  color: var(--secondary-color);
+}
+
+.section9-container-bottom-div{
+  display: flex;
+  align-items: center;
+}
+
+.section9-container-bottom-div-left {
+  color: var(--primary-color);
+  font-size: 3.7rem;
+  margin-right: 1.5rem;
+}
+
+.section9-container-bottom-div-right p {
+  line-height: 1.5;
+}
+
+.rocket {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-200px, 0%);
+}
+
+/* ======================= FOOTER ================= */
+.footer {
+  font-family: 'Nunito';
+  background-color: var(--dark-color);
+  padding: 4rem 0 .8rem 0;
+}
+
+.footer h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: var(--secondary-color);
+  line-height: 1.8;
+  font-family: 'Josefin Sans';
+}
+
+.footer li {
+  color: var(--secondary-color);
+  line-height: 2.5;
+  font-family: 'Josefin Sans';
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* footer-container-top */
+
+.footer-container-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 2rem;
+}
+
+/* footer-container-middle */
+
+.footer-container-middle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 15px;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-container-middle div {
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem .3rem .2rem .3rem;
+  border-radius: 20%;
+}
+
+.footer-container-middle div:hover {
+  background-color: var(--dark-color);
+}
+
+.footer-container-middle img {
+  width: 70%;
+}
+
+.footer-container-bottom {
+  text-align: center;
+  border-top: 1px solid var(--lightgrey);
+  padding-top: 1rem;
 }
